@@ -1,6 +1,6 @@
 # Bad Time Simulator (Sans Fight) – A Fan-Made Undertale Experience
 
-Hey there! 👋  
+Hey there! 👋 
 So you’ve stumbled upon this project – that’s awesome! Let me walk you through what this is, why it exists, and how you can try it out for yourself.
 
 This project is a fun and challenging browser-based version of the **Bad Time Simulator**, specifically the **Sans Fight** from Undertale. Whether you're a long-time fan of the game or just looking for a cool online challenge, you're in the right place.
