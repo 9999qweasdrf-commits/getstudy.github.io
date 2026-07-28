@@ -23,16 +23,19 @@ document.addEventListener("DOMContentLoaded", e => {
 
     }
     function getquizdata() {
-        fetch("https://github.tacz.f5.si/qs/qsData/1.json").then(
+        fetch("https://github.tacz.f5.si/qs/qsData/1.json", {
+            cache: "no-store"
+        }).then(
             res => res.json()
         ).then(
             data => {
                 console.log(data);
                 alert("yes" + JSON.stringify(data));
+                return data;
             }
         ).catch(error => {
             alert("no" + error)
         })
-    }
-    getquizdata();
+    };
+    const DATA = getquizdata();
 })
