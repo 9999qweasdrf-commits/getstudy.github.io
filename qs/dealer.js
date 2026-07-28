@@ -27,7 +27,8 @@ document.addEventListener("DOMContentLoaded", e => {
             res => res.json()
         ).then(
             data => {
-                alert("yes" + JSON.stringify(data))
+                console.log(data);
+                alert("yes" + JSON.stringify(data));
             }
         ).catch(error => {
             alert("no" + error)
