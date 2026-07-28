@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", e => {
     rootDomDealer.CCE("#box","p", { text: JSON.stringify(data2), id: "dated2"})
     */
     //ここは例だからコメントアウト.
-    
+    //
     //rootDomDealer.MODIFY()書いてないけどとにかく横並び.
     
     //上記のようにしたかったけど構造上できない。これだからすべての要素を一から作ったほうがいいんですね.
