@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", e => {
     //ここは例だからコメントアウト.
 
     //rootDomDealer.MODIFY()書いてないけどとにかく横並び.
-    
+    //
     //上記のようにしたかったけど構造上できない。これだからすべての要素を一から作ったほうがいいんですね.
     rootDomDealer.CE("div", { id: "block", styles: { display: "flex", height: "100vh", margin: "0", padding: "0", "background-color": "black"}})
     rootDomDealer.CCE("#block", "div", { id: "leftblock", styles: { width: "50%", height: "100vh", "background-color": "black"}});
