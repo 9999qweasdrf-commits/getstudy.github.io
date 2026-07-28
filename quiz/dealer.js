@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", e => {
 
     }
     function getquizdata() {
-        fetch("https://github.tacz.f5.si/quizData/1.json").then(
+        fetch("/quiz/quizData/1.json").then(
             res => res.json()
         ).then(
             data => {
