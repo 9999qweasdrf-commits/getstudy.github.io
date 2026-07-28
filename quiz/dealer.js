@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", e => {
                 alert("yes" + JSON.stringify(data))
             }
         ).catch(error => {
-            alert("no" + JSON.stringify(error))
+            alert("no" + error)
         })
     }
     getquizdata();
