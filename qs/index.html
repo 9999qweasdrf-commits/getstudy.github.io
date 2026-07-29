@@ -18,11 +18,14 @@
     <body>
         <main></main>
         <script>
-            const datatime = Math.random(1.0,100);
-            document.querySelector("body").appendChild(`
-            <script src="./domDeal.js?v=${datatime}"></script>
-            <script src="./dealer.js?v=${datatime}"></script>
-        `);
+            const datatime = Math.floor(Math.random() * 100);
+            const script1 = document.createElement('script');
+            script1.src = `./domDeal.js?v=${datatime}`;
+            document.body.appendChild(script1);
+            
+            const script2 = document.createElement('script');
+            script2.src = `./dealer.js?v=${datatime}`;
+            document.body.appendChild(script2);
         </script>
     </body>
 </html>
