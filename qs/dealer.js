@@ -29,7 +29,7 @@ function initializeQuiz() {
     const DATA = getquizdata();
 }
 
-// ページが既に読み込まれている場合は即座に実
+// ページが既に読み込まれている場合は即座に実a
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initializeQuiz);
 } else {
