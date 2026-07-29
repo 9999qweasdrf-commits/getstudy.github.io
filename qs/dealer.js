@@ -31,7 +31,7 @@ function initializeQuiz() {
     createQuizUI(DATA);
 }
 
-// ページが既に読み込まれている場合は即座に実a
+// ページが既に読み込まれている場合は即座に実
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initializeQuiz);
 } else {
