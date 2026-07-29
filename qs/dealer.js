@@ -10,11 +10,11 @@ function initializeQuiz() {
     
     function createQuizUI(data) {
         console.log(data);
-        rootDomDealer.CCE("#header", { text: data.name})
+        rootDomDealer.CCE("#header", "div", { text: data.name})
     }
     
     function getquizdata() {
-        fetch("/qs/qsData/1.json", {
+        return fetch("/qs/qsData/1.json", {
             cache: "no-store"
         }).then(
             res => res.json()
@@ -24,15 +24,13 @@ function initializeQuiz() {
                 return data;
             }
         ).catch(error => {
+            console.error('Error:', error);
         })
-    };
+    }
     
-    const DATA = getquizdata();
-
-    createQuizUI(DATA);
+    getquizdata().then(data => createQuizUI(data));
 }
 
-// ページが既に読み込まれている場合は即座に実a
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initializeQuiz);
 } else {
