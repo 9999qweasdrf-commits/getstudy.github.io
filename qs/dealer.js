@@ -10,7 +10,7 @@ function initializeQuiz() {
     
     function createQuizUI(data) {
         console.log(data);
-        rootDomDealer.CCE("#header", "div", { text: data.name})
+        rootDomDealer.CCE("#header", "p", { text: data.name, styles: { color: "white", size: "7vh" }})
     }
     
     function getquizdata() {
