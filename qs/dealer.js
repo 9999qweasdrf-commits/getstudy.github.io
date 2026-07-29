@@ -9,7 +9,7 @@ function initializeQuiz() {
     rootDomDealer.CCE("#block|#rightblock", "div", { id: "rightcontent", styles: { height: "100%", "box-sizing": "border-box", border : "solid 5px #333333", "border-radius": "15px", "background-color": "#000000"}})
     
     function createQuizUI(data) {
-
+        rootDomDealer.CCE("#header", { text: data.name})
     }
     
     function getquizdata() {
