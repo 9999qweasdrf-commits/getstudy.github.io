@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", e => {
     rootDomDealer.CE("div", { id: "header", styles: { height: "15vh", margin: "0", padding: "0", "background-color": "darkgrey"}})
     rootDomDealer.CE("div", { id: "block", styles: { display: "flex", height: "85vh", margin: "0", padding: "0", "background-color": "black"}})
     rootDomDealer.CCE("#block", "div", { id: "leftblock", styles: { width: "50%", height: "100%", "background-color": "black"}});
-    rootDomDealer.CCE("#block", "div", { id: "rightblock", styles: { width: "50%","margin-top": "40px", height: "100%", "margin-bottom": "80px", "margin-right": "20px", "margin-left": "20px" , border : "solid 5px grey", "border-radius": "15px", "background-color": "black"}});
+    rootDomDealer.CCE("#block", "div", { id: "rightblock", styles: { width: "50%","margin-top": "40px", height: "100%", "margin-bottom": "0px", "margin-right": "20px", "margin-left": "20px" , border : "solid 5px grey", "border-radius": "15px", "background-color": "black"}});
     function createQuizUI(data) {
 
     }
