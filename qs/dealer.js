@@ -16,11 +16,11 @@ document.addEventListener("DOMContentLoaded", e => {
     //rootDomDealer.MODIFY()書いてないけどとにかく横並び.
     
     //上記のようにしたかったけど構造上できない。これだからすべての要素を一から作ったほうがいいんですね.
-    rootDomDealer.CE("div", { id: "header", styles: { height: "15vh", margin: "0", padding: "0", "background-color": "darkgrey"}})
+    rootDomDealer.CE("div", { id: "header", styles: { height: "15vh", margin: "0", padding: "0", "background-color": "#333333"}})
     rootDomDealer.CE("div", { id: "block", styles: { display: "flex", height: "85vh", margin: "0", padding: "0", "background-color": "black"}})
     rootDomDealer.CCE("#block", "div", { id: "leftblock", styles: { width: "50%", height: "100%", "background-color": "black"}});
     rootDomDealer.CCE("#block", "div", { id: "rightblock", styles: { width: "50%", height: "100%", "background-color": "black"}});
-    rootDomDealer.CCE("#block|#rightblock", "div", { id: "rightcontent", styles: { height: "100%", "margin-top": "40px", "margin-bottom": "80px", "margin-right": "20px", "margin-left": "20px" , border : "solid 5px grey", "border-radius": "15px"}})
+    rootDomDealer.CCE("#block|#rightblock", "div", { id: "rightcontent", styles: { height: "100%", "margin-top": "40px", "margin-bottom": "80px", "margin-right": "20px", "margin-left": "20px" , border : "solid 5px #333333", "border-radius": "15px"}})
     function createQuizUI(data) {
 
     }
