@@ -16,7 +16,8 @@ document.addEventListener("DOMContentLoaded", e => {
     //rootDomDealer.MODIFY()書いてないけどとにかく横並び.
     
     //上記のようにしたかったけど構造上できない。これだからすべての要素を一から作ったほうがいいんですね.
-    rootDomDealer.CE("div", { id: "block", styles: { display: "flex", height: "100vh", margin: "0", padding: "0", "background-color": "black"}})
+    rootDomDealer.CE("div", { id: "header", styles: { height: "15vh", margin: "0", padding: "0", "background-color": "darkgrey"}})
+    rootDomDealer.CE("div", { id: "block", styles: { display: "flex", height: "850vh", margin: "0", padding: "0", "background-color": "black"}})
     rootDomDealer.CCE("#block", "div", { id: "leftblock", styles: { width: "50%", height: "100vh", "background-color": "black"}});
     rootDomDealer.CCE("#block", "div", { id: "rightblock", styles: { width: "50%","margin-top": "40px", "margin-bottom": "80px", "margin-right": "20px", "margin-left": "20px" , border : "solid 5px grey", "border-radius": "15px", "background-color": "black"}});
     function createQuizUI(data) {
