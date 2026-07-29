@@ -19,12 +19,17 @@
         <main></main>
         <script>
             const datatime = Math.floor(Math.random() * 100);
+            
             const script1 = document.createElement('script');
             script1.src = `./domDeal.js?v=${datatime}`;
+            script1.onload = () => console.log('domDeal.js loaded');
+            script1.onerror = () => console.error('Failed to load domDeal.js');
             document.body.appendChild(script1);
             
             const script2 = document.createElement('script');
             script2.src = `./dealer.js?v=${datatime}`;
+            script2.onload = () => console.log('dealer.js loaded');
+            script2.onerror = () => console.error('Failed to load dealer.js');
             document.body.appendChild(script2);
         </script>
     </body>
