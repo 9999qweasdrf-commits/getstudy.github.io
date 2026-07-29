@@ -17,7 +17,12 @@
     </head>
     <body>
         <main></main>
-        <script src="./domDeal.js"></script>
-        <script src="./dealer.js"></script>
+        <script>
+            const datatime = Math.random(1.0,100);
+            document.querySelector("body").appendChild(`
+            <script src="./domDeal.js?v=${datatime}"></script>
+            <script src="./dealer.js?v=${datatime}"></script>
+        `);
+        </script>
     </body>
 </html>
