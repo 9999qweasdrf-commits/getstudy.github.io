@@ -27,6 +27,8 @@ function initializeQuiz() {
     };
     
     const DATA = getquizdata();
+
+    createQuizUI(DATA);
 }
 
 // ページが既に読み込まれている場合は即座に実a
