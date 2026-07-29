@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", e => {
                 return data;
             }
         ).catch(error => {
-            //alert("no" + error)
         })
     };
     const DATA = getquizdata();
