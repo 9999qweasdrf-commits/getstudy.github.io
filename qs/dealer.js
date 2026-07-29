@@ -11,6 +11,8 @@ function initializeQuiz() {
     function createQuizUI(data) {
         console.log(data);
         rootDomDealer.CCE("#header", "p", { text: data.name, styles: { color: "white", "font-size": "100%", margin: "0" }})
+        const questionDealer = new Deal(document.getElementById("leftblock"));
+        questionDealer.CE("p", { text: data.content[0].sentence})
     }
     
     function getquizdata() {
