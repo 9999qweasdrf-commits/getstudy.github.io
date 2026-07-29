@@ -32,11 +32,10 @@ document.addEventListener("DOMContentLoaded", e => {
         ).then(
             data => {
                 console.log(data);
-                alert("yes" + JSON.stringify(data));
                 return data;
             }
         ).catch(error => {
-            alert("no" + error)
+            //alert("no" + error)
         })
     };
     const DATA = getquizdata();
